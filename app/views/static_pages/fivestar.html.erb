@@ -1,0 +1,126 @@
+<% provide(:title, 'Home Style') %>
+
+<%= render 'shared/header' %>
+
+<link rel="stylesheet" href="http://www.frontend.reklamor.com/fancybox/jquery.fancybox.css" media="screen">
+<script src="http://www.frontend.reklamor.com/fancybox/jquery.fancybox.js"></script>
+
+<div class="container" style="margin-top: 50px;">
+    <div class="row food-images">
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="/assets/lemonchicken.jpeg">
+                    <img class="img-responsive" alt="" src="/assets/lemonchicken.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Lemon Pepper Chicken</small>
+                    </div> <!-- text-right / end -->
+                </a>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <h3 style="font-weight: bold;">1. Lemon pepper chicken</h3>
+                <p> Juicy flavorful lemon pepper chicken with the vibrant zing of lemon marmalade,garlic herb, couscous argula salad, raspberry vinaigrette and the peppery floral aroma of freshly cracked black pepper.</p>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="/assets/macncheese.jpg">
+                    <img class="img-responsive" alt="" src="/assets/salmon-sweet-spicy.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Sweet and Spicy Salmon </small>
+                    </div> <!-- text-right / end -->
+                </a>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <h3 style="font-weight: bold;">2. Sweet and Spicy Salmon </h3>
+                <p> The decadent-tasting "good" fat in salmon complements the sweet-spicy of mixture orange, ginger, sriracha sauce and baked asparagus. 
+                </p>
+        </div> <!-- col-6 / end -->
+        
+    </div> <!-- row / end -->
+
+    <div class="row food-images">
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="/assets/chicken-casserole.jpg">
+                    <img class="img-responsive" alt="" src="/assets/turkey-sandwich.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Thanksgiving Sandwich </small>
+                    </div> <!-- text-right / end -->
+                </a>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <h3 style="font-weight: bold;">3. Thanksgiving Sandwich </h3>
+                <p>Missing Christmas season, try sandwich with turkey breast, stuffing crumble, and baked sweet potato home fries .</p>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="/assets/pork-chops.jpg">
+                    <img class="img-responsive" alt="" src="/assets/salmon-quesadilla.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Gourmet Quesadilla</small>
+                    </div> <!-- text-right / end -->
+                </a>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <h3 style="font-weight: bold;">4. Gourmet Quesadilla</h3>
+                <p> Flour tortilla or corn tortilla filled with a savoury mixture containing cheese, choices of meat (Chicken/ Shrimp/ Steak), and Veggie.</p>
+        </div> <!-- col-6 / end -->
+
+    </div> <!-- row / end -->
+
+    <div class="row food-images">
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="/assets/shepherdpie.jpg">
+                    <img class="img-responsive" alt="" src="/assets/salmon-quiche.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Gourmet Quiche</small>
+                    </div> <!-- text-right / end -->
+                </a>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <h3 style="font-weight: bold;">5. Gourmet Quiche</h3>
+                <p> Famous French cuisine, open-faced pastry crust with a filling of savoury custard with 
+                 your choices of meat (Chicken/ Shrimp/ Steak) and veggie (Spinach/ Tomato/ Broccoli).</p>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="/assets/pork-chops.jpg">
+                    <img class="img-responsive" alt="" src="/assets/eggplant-parm.jpeg" />
+                    <div class='text-right'>
+                        <small class='text-muted'> Eggplant Parmesan</small>
+                    </div> <!-- text-right / end -->
+                </a>
+        </div> <!-- col-6 / end -->
+
+        <div class='col-sm-6 col-xs-6 col-md-3 col-lg-3'>
+                <h3 style="font-weight: bold;">6. Eggplant Parmesan </h3>
+                <p>A vegetarian Italian casserole, simply done with fresh eggplant, lightly breaded, the right amount of tomato sauce  then topped with melting chesse.</p>
+        </div> <!-- col-6 / end -->
+
+    </div> <!-- row / end -->
+</div> <!-- container / end -->
+
+</br>
+
+<a href = "<%= new_homestyle_path %>" class = "customer-order-button">
+<button type="button" class="btn btn-info btn-lg center-block order-button">Order Now</button>
+</a>
+
+<script>
+    $(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+        $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
+    });
+   
+  
+</script>
+
+<%= render 'shared/footer' %>
